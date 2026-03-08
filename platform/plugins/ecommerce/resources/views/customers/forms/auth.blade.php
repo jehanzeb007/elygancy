@@ -21,7 +21,7 @@
                         @if ($bannerDirection === 'horizontal')
                             <div class="col-md-6 auth-card__left">
                         @endif
-{{--                            {{ RvMedia::image($banner, $heading ?: '', attributes: ['class' => 'auth-card__banner']) }}--}}
+                            {{ RvMedia::image($banner, $heading ?: '', attributes: ['class' => 'auth-card__banner']) }}
                         @if ($bannerDirection === 'horizontal')
                         </div>
                         @endif
