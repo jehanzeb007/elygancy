@@ -7,13 +7,15 @@
                     <div class="col-lg-5">
                         <div class="mainmenu d-flex align-items-center">
                             <div class="mainmenu__search w-100">
-                                <form action="{{ route('public.products') }}" class="position-relative form--quick-search" data-url="{{ route('public.ajax.search-products') }}" method="GET">
-                                    <div class="mainmenu__search-bar p-relative">
-                                        <button class="mainmenu__search-icon" title="search"><i class="fal fa-search"></i></button>
-                                        <input type="text" name="q" class="input-search-product" placeholder="{{ __('Search products...') }}" value="{{ BaseHelper::stringify(request()->query('q')) }}" autocomplete="off">
-                                    </div>
-                                    <div class="panel--search-result"></div>
-                                </form>
+                                {!! Theme::get('headerSearchBar') !!}
+
+{{--                                <form action="{{ route('public.products') }}" class="position-relative form--quick-search" data-url="{{ route('public.ajax.search-products') }}" method="GET">--}}
+{{--                                    <div class="mainmenu__search-bar p-relative">--}}
+{{--                                        <button class="mainmenu__search-icon" title="search"><i class="fal fa-search"></i></button>--}}
+{{--                                        <input type="text" name="q" class="input-search-product w-100" placeholder="{{ __('Search products...') }}" value="{{ BaseHelper::stringify(request()->query('q')) }}" autocomplete="off">--}}
+{{--                                    </div>--}}
+{{--                                    <div class="panel--search-result"></div>--}}
+{{--                                </form>--}}
                             </div>
                         </div>
                     </div>
