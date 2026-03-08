@@ -4,7 +4,7 @@
             @foreach($sliders as $slider)
                 <div class="swiper-slide slider-bg" @if ($shortcode->background_color) style="background-color: {{ $shortcode->background_color }} !important;" @endif>
                     <div class="container">
-                        <div class="slider-top-padding pt-55">
+                        <div class="slider-top-padding pt-10">
                             <div class="row p-relative align-items-end">
                                 <div class="col-xl-5 col-lg-6 col-md-6 d-flex align-self-center">
                                     <div class="tpslidertwo__item">

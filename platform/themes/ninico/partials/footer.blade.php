@@ -13,12 +13,12 @@
         "
     >
         <div class="container">
-            <div class="main-footer pb-15 mb-30">
+            <div class="main-footer">
                 <div class="row">
                     {!! dynamic_sidebar('footer_sidebar') !!}
                 </div>
             </div>
-            <div class="footer-cta pb-20">
+            <div class="footer-cta">
                 <div class="row justify-content-between align-items-center">
                     {!! dynamic_sidebar('footer_middle_sidebar') !!}
                 </div>
