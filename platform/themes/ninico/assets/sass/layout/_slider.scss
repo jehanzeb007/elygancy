@@ -374,17 +374,8 @@ section.slider-area {
 
 .slider-pagination-2 {
     & .slidertwo_pagination {
-        position: absolute;
-        bottom: 55px;
         z-index: 9;
         inset-inline-start: 0;
-        @media #{$md} {
-            bottom: 15px;
-        }
-        @media #{$xs} {
-            margin-bottom: 10px;
-        }
-
         & .swiper-pagination-bullet {
             width: 25px;
             height: 4px;
