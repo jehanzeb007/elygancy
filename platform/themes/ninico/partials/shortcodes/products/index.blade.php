@@ -26,5 +26,10 @@
             <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-all-tab"></div>
             <div class="loading-spinner"></div>
         </div>
+        <div class="row">
+            <div class="col-md-12 col-12 text-center mt-10 pt-20">
+                <a href="{{ route('public.products') }}" class="tpsecondary-btn text-white">View all Products <i class="fal fa-long-arrow-right"></i></a>
+            </div>
+        </div>
     </div>
 </section>
