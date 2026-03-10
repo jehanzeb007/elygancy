@@ -204,12 +204,23 @@ $(() => {
         })
 
         new Swiper('.slidertwo-active', {
+
             loop: true,
-            slidesPerView: 1,
-            effect: 'fade',
+            lazy: true,
             autoplay: {
                 delay: 5500,
                 disableOnInteraction: false,
+            },
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-20%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
             },
             pagination: {
                 el: '.slidertwo_pagination',
