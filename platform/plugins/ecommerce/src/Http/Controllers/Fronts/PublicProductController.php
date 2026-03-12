@@ -41,7 +41,7 @@ class PublicProductController extends BaseController
         }
 
         SeoHelper::setTitle(theme_option('ecommerce_products_seo_title') ?: __('Products'))
-            ->setDescription(theme_option('ecommerce_products_seo_description'));
+            ->setDescription(theme_option('ecommerce_products_seo_description'))->setUrl(url()->current());
 
         $with = EcommerceHelper::withProductEagerLoadingRelations();
 
