@@ -27,7 +27,7 @@
                         <div class="row align-items-center">
                             <div class="col-sm-6">
                                 <div class="product-item-count">
-                                    <h2>Shop</h2> <i class="fal fa-long-arrow-right"></i> <span>{{ __(':total Products found', ['total' => $products->total()]) }}</span>
+                                    <h2 class="d-inline">Shop</h2>&nbsp; <i class="fal fa-long-arrow-right"></i> &nbsp;<span>{{ __(':total Products found', ['total' => $products->total()]) }}</span>
                                 </div>
                             </div>
                             <div class="col-sm-6">
