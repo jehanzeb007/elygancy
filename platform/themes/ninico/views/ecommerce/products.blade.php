@@ -9,7 +9,7 @@
                 <div class="backdrop"></div>
                 <div class="product-filter-mobile__inner">
                     <div class="product-filter-mobile__header d-md-none">
-                        <h5>{{ __('Filter Products') }}</h5>
+                        <strong>{{ __('Filter Products') }}</strong>
                         <button class="close-product-filter-mobile">
                             <i class="fal fa-times"></i>
                         </button>
@@ -27,7 +27,7 @@
                         <div class="row align-items-center">
                             <div class="col-sm-6">
                                 <div class="product-item-count">
-                                    <span>{{ __(':total Products found', ['total' => $products->total()]) }}</span>
+                                    <h2>Shop</h2> <i class="fal fa-long-arrow-right"></i> <span>{{ __(':total Products found', ['total' => $products->total()]) }}</span>
                                 </div>
                             </div>
                             <div class="col-sm-6">

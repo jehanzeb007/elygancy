@@ -44,8 +44,7 @@ class PublicProductController extends BaseController
             ->setDescription(theme_option('ecommerce_products_seo_description'));
 
         $with = EcommerceHelper::withProductEagerLoadingRelations();
-        SeoHelper::meta()
-            ->setUrl(url()->current());
+        SeoHelper::meta()->setUrl(url()->current());
 
         if (($query = BaseHelper::stringify($request->input('q'))) && ! $request->ajax()) {
             $products = $productService->getProduct($request, null, null, $with);
