@@ -3,7 +3,7 @@
 @endphp
 
 <div class="bb-product-filter">
-    <h4 class="bb-product-filter-title border-0 mb-3">{{ __('Price') }}</h4>
+    <strong class="bb-product-filter-title border-0 mb-3">{{ __('Price') }}</strong>
 
     <div class="bb-product-filter-content">
         <div class="bb-product-price-filter">

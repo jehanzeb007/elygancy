@@ -1,6 +1,6 @@
 @if ($tags->isNotEmpty())
     <div class="bb-product-filter">
-        <h4 class="bb-product-filter-title">{{ __('Tags') }}</h4>
+        <strong class="bb-product-filter-title">{{ __('Tags') }}</strong>
 
         <div class="bb-product-filter-content">
             <ul class="bb-product-filter-items filter-checkbox">

@@ -1,6 +1,6 @@
 @if ($brands->isNotEmpty())
     <div class="bb-product-filter">
-        <h4 class="bb-product-filter-title">{{ __('Brands') }}</h4>
+        <strong class="bb-product-filter-title">{{ __('Brands') }}</strong>
 
         <div class="bb-product-filter-content">
             <ul class="bb-product-filter-items filter-checkbox">
