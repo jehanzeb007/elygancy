@@ -45,7 +45,8 @@ class PublicProductController extends BaseController
 
         $with = EcommerceHelper::withProductEagerLoadingRelations();
         SeoHelper::meta()
-            ->setUrl(route('public.products'));
+            ->setUrl(url()->current());
+
         if (($query = BaseHelper::stringify($request->input('q'))) && ! $request->ajax()) {
             $products = $productService->getProduct($request, null, null, $with);
 
@@ -53,9 +54,6 @@ class PublicProductController extends BaseController
 
             Theme::breadcrumb()
                 ->add(__('Search'), route('public.products'));
-
-            SeoHelper::meta()
-                ->setUrl(route('public.products'));
 
             app(GoogleTagManager::class)->search($query, $products->all());
             app(FacebookPixel::class)->search($query, $products->all());
