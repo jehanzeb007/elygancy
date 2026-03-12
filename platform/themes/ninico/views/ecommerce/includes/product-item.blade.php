@@ -41,10 +41,11 @@
                 @if (EcommerceHelper::isWishlistEnabled())
                     <a class="wishlist add-to-wishlist" href="#"
                        title="{{ __('Add to wishlist') }}"
-                       data-url="{{ route('public.wishlist.add', $product->getKey()) }}"><i class="fal fa-heart"></i></a>
+                       data-url="{{ route('public.wishlist.add', $product->getKey()) }}"><i class="fal fa-heart"></i>
+                    </a>
                 @endif
-            @endif
-        </div>
+            </div>
+        @endif
     </div>
     <div class="tpproduct__content">
         <h3 class="tpproduct__title text-truncate">
