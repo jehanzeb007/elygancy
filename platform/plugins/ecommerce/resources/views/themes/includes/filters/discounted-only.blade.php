@@ -1,6 +1,6 @@
 <div class="bb-product-filter">
     <div class="bb-product-filter-attribute-item">
-        <h4 class="bb-product-filter-title">{{ __('On Sale') }}</h4>
+        <strong class="bb-product-filter-title">{{ __('On Sale') }}</strong>
         <div class="bb-product-filter-content">
             <ul class="bb-product-filter-items filter-checkbox">
                 <li class="bb-product-filter-item">
