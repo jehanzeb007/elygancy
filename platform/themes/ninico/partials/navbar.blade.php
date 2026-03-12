@@ -131,7 +131,7 @@
         <i class="fal fa-times"></i>
     </button>
     <div class="tpcart">
-        <h4 class="tpcart__title">{{ __('Your Cart') }}</h4>
+        <strong class="tpcart__title">{{ __('Your Cart') }}</strong>
         <div class="tpcart__product">
             @include(Theme::getThemeNamespace('views.ecommerce.includes.mini-cart'))
         </div>
