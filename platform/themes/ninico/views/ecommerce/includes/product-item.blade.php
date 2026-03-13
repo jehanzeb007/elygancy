@@ -21,8 +21,8 @@
             @endif
         </div>
         <a href="{{ $product->url }}">
-            <img src="{{ RvMedia::getImageUrl($product->image, 'small', false, RvMedia::getDefaultImage()) }}" alt="{{ $product->name }}">
-            <img class="product-thumb-secondary" src="{{ RvMedia::getImageUrl(Arr::get($product->images, 2, $product->image), 'small', false, RvMedia::getDefaultImage()) }}" alt="{{ $product->name }}">
+            <img src="{{ RvMedia::getImageUrl($product->image, 'medium', false, RvMedia::getDefaultImage()) }}" alt="{{ $product->name }}">
+            <img class="product-thumb-secondary" src="{{ RvMedia::getImageUrl(Arr::get($product->images, 2, $product->image), 'medium', false, RvMedia::getDefaultImage()) }}" alt="{{ $product->name }}">
         </a>
         @if (EcommerceHelper::isCompareEnabled() || theme_option('enable_quick_view', 'yes') === 'yes' || EcommerceHelper::isWishlistEnabled())
             <div class="tpproduct__thumb-action">
