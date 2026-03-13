@@ -410,7 +410,25 @@
         }
     }
 }
-
+#mobile-menu {
+    & ul {
+        & > li {
+            position: relative;
+            list-style: none;
+            display: inline-block;
+            margin-inline-end: 40px;
+            @media #{$xxl} {
+                margin-inline-end: 40px;
+            }
+            @media #{$xl} {
+                margin-inline-end: 10px;
+            }
+            @media #{$lg} {
+                margin-inline-end: 40px;
+            }
+        }
+    }
+}
 .main-menu {
     & ul {
         & > li {
