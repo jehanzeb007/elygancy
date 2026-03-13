@@ -186,6 +186,7 @@
 
                 <div class="d-flex align-items-center gap-4 mb-4">
                     @if (EcommerceHelper::isWishlistEnabled())
+                        @php($wishlistItems = Cart::instance('wishlist')->content()->where('id',$product->id)->count())
                         <div>
                             <a
                                 class="wishlist add-to-wishlist text-muted small"
@@ -193,7 +194,7 @@
                                 title="{{ __('Add to wishlist') }}"
                                 data-url="{{ route('public.wishlist.add', $product->getKey()) }}"
                             >
-                                <i class="fal fa-heart"></i>
+                                <i class="{{$wishlistItems?'fas text-primary':'fal'}} fa-heart"></i>
                                 {{ __('Wishlist') }}
                             </a>
                         </div>

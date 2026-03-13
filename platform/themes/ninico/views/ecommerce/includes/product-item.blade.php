@@ -39,9 +39,10 @@
                     <a class="quickview" href="#" data-url="{{ route('public.ajax.quick-view', $product->id) }}"><i class="fal fa-eye"></i></a>
                 @endif
                 @if (EcommerceHelper::isWishlistEnabled())
-                    <a class="wishlist add-to-wishlist" href="#"
+                    @php($wishlistItems = Cart::instance('wishlist')->content()->where('id',$product->id)->count())
+                    <a class="wishlist add-to-wishlist {{$wishlistItems?'itemed':''}}" href="#"
                        title="{{ __('Add to wishlist') }}"
-                       data-url="{{ route('public.wishlist.add', $product->getKey()) }}"><i class="fal fa-heart"></i>
+                       data-url="{{ route('public.wishlist.add', $product->getKey()) }}"><i class="{{$wishlistItems?'fas':'fal'}} fa-heart"></i>
                     </a>
                 @endif
             </div>

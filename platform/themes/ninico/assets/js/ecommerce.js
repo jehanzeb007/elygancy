@@ -543,10 +543,13 @@ class Ecommerce {
                     Theme.showError(message)
                 } else {
                     Theme.showSuccess(message)
+
                     $('.header-cart .tp-product-wishlist-count').text(data.count)
                     if (data.added) {
+                        $currentTarget.addClass('itemed')
                         $currentTarget.find('i').removeClass('fal').addClass('fas')
                     } else {
+                        $currentTarget.removeClass('itemed')
                         $currentTarget.find('i').removeClass('fas').addClass('fal')
                     }
                 }
