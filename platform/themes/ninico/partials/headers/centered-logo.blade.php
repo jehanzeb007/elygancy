@@ -39,7 +39,7 @@
                 <div class="col-xl-12 col-md-12 ">
                     <div class="menu-area-4">
                         <div class="main-menu">
-                            <nav id="mobile-menu" style="display: block;">
+                            <nav style="display: block;">
                                 {!! Menu::renderMenuLocation('main-menu', ['view' => 'menu']) !!}
                             </nav>
                         </div>
