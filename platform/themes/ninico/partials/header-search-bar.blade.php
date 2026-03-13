@@ -1,4 +1,4 @@
-@if(is_plugin_active('ecommerce'))
+@if(is_plugin_active('ecommerce') && 1==false)
     <div class="header-search-bar">
         <form action="{{ route('public.products') }}" class="position-relative form--quick-search" data-url="{{ route('public.ajax.search-products') }}" method="GET">
             <div class="search-info p-relative">
