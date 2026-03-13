@@ -36,7 +36,7 @@
     <div class="main-menu-area pt-15 d-none d-xl-block">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-6">
+                <div class="col-xl-12 col-md-12 ">
                     <div class="menu-area-4">
                         <div class="main-menu">
                             <nav id="mobile-menu" style="display: block;">
