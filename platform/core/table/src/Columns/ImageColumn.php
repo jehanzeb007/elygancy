@@ -12,7 +12,7 @@ class ImageColumn extends FormattedColumn implements FormattedColumnContract
 
     protected int $width = 50;
 
-    protected ?string $mediaSize = 'thumb';
+    protected ?string $mediaSize = 'medium';
 
     public static function make(array|string $data = [], string $name = ''): static
     {
@@ -70,7 +70,7 @@ class ImageColumn extends FormattedColumn implements FormattedColumnContract
         )->toHtml();
     }
 
-    protected function getImageUrl(?string $value, ?string $mediaSize = 'medium'): string
+    protected function getImageUrl(?string $value, ?string $mediaSize = 'thumb'): string
     {
         return (string) RvMedia::getImageUrl($value, $mediaSize, $this->relative, RvMedia::getDefaultImage());
     }
