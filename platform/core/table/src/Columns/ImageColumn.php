@@ -70,7 +70,7 @@ class ImageColumn extends FormattedColumn implements FormattedColumnContract
         )->toHtml();
     }
 
-    protected function getImageUrl(?string $value, ?string $mediaSize = 'thumb'): string
+    protected function getImageUrl(?string $value, ?string $mediaSize = 'medium'): string
     {
         return (string) RvMedia::getImageUrl($value, $mediaSize, $this->relative, RvMedia::getDefaultImage());
     }
