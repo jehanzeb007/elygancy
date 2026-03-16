@@ -124,9 +124,11 @@ class ProductTable extends TableAbstract
 
                 return Html::link(
                     //route('products.edit', $item->getKey()),
-                    url($item->url),
+                    url($item->url.'?preview=true'),
                     BaseHelper::clean($item->name),
-                    ['target' => '_blank']
+                    [
+                        'target' => '_blank',
+                    ]
                 ) . $productType;
             })
             ->editColumn('price', function (Product $item) {
