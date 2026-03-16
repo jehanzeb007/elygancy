@@ -124,7 +124,11 @@ class ProductTable extends TableAbstract
 
                 return Html::link(
                     //route('products.edit', $item->getKey()),
-                    url($item->url.'?preview=true'),
+                    $url = $item->url;
+                    if($item->status != 'published'){
+                        $url = $url.'?preview=true';
+                    }
+                    url($url),
                     BaseHelper::clean($item->name),
                     [
                         'target' => '_blank',
