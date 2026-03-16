@@ -12,9 +12,11 @@ use Botble\Ecommerce\Facades\EcommerceHelper;
 use Botble\Ecommerce\Models\Brand;
 use Botble\Ecommerce\Models\Product;
 use Botble\Ecommerce\Models\ProductCategory;
+use Botble\Slug\Facades\SlugHelper;
 use Botble\Table\Abstracts\TableAbstract;
 use Botble\Table\Actions\DeleteAction;
 use Botble\Table\Actions\EditAction;
+use Botble\Table\Actions\ViewAction;
 use Botble\Table\BulkActions\DeleteBulkAction;
 use Botble\Table\BulkChanges\CreatedAtBulkChange;
 use Botble\Table\BulkChanges\IsFeaturedBulkChange;
@@ -121,8 +123,10 @@ class ProductTable extends TableAbstract
                 }
 
                 return Html::link(
-                    route('products.edit', $item->getKey()),
-                    BaseHelper::clean($item->name)
+                    //route('products.edit', $item->getKey()),
+                    url($item->url),
+                    BaseHelper::clean($item->name),
+                    ['target' => '_blank']
                 ) . $productType;
             })
             ->editColumn('price', function (Product $item) {
