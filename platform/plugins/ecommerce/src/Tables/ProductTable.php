@@ -121,13 +121,13 @@ class ProductTable extends TableAbstract
                 if (! EcommerceHelper::isDisabledPhysicalProduct() && ! $this->hasPermission('products.edit')) {
                     return BaseHelper::clean($item->name) . $productType;
                 }
-
+                $url = $item->url;
+                if($item->status != 'published'){
+                    $url = $url.'?preview=true';
+                }
+                
                 return Html::link(
                     //route('products.edit', $item->getKey()),
-                    $url = $item->url;
-                    if($item->status != 'published'){
-                        $url = $url.'?preview=true';
-                    }
                     url($url),
                     BaseHelper::clean($item->name),
                     [
