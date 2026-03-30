@@ -54,7 +54,7 @@
         </h3>
 
         @if (EcommerceHelper::isReviewEnabled())
-            <div class="mb-2" style="margin-top: -0.75rem">
+            <div class="f-right" style="margin-top: -0.75rem">
                 <div class="product-rating-wrapper">
                     <div class="product-rating" style="width: {{ $product->reviews_avg * 20 }}%"></div>
                 </div>

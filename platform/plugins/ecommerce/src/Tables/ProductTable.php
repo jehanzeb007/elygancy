@@ -125,7 +125,7 @@ class ProductTable extends TableAbstract
                 if($item->status != 'published'){
                     $url = $url.'?preview=true';
                 }
-                
+
                 return Html::link(
                     //route('products.edit', $item->getKey()),
                     url($url),
