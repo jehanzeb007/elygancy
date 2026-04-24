@@ -387,7 +387,7 @@
                             aria-labelledby="sizechart-tab"
                         >
                             <div class="ck-content">
-                                Hello
+                                <img src="{{ url('sizechart.jpeg') }}" alt="Size Chart">
                             </div>
                         </div>
                         @if (EcommerceHelper::isProductSpecificationEnabled() && $product->specificationAttributes->where('pivot.hidden', false)->isNotEmpty())
