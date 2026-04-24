@@ -380,6 +380,16 @@
                                 </div>
                             @endif
                         </div>
+                        <div
+                            class="tab-para tab-pane"
+                            id="sizechart"
+                            role="tabpanel"
+                            aria-labelledby="sizechart-tab"
+                        >
+                            <div class="ck-content">
+                                Hello
+                            </div>
+                        </div>
                         @if (EcommerceHelper::isProductSpecificationEnabled() && $product->specificationAttributes->where('pivot.hidden', false)->isNotEmpty())
                             <div class="tab-pane fade" id="nav-specification" role="tabpanel" aria-labelledby="nav-specification-tab" tabindex="0">
                                 <div class="tp-product-details-additional-info">
