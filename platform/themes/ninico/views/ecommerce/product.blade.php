@@ -386,7 +386,7 @@
                             role="tabpanel"
                             aria-labelledby="sizechart-tab"
                         >
-                            <div class="ck-content">
+                            <div class="ck-content text-center">
                                 <img src="{{ url('sizechart.jpeg') }}" alt="Size Chart">
                             </div>
                         </div>
