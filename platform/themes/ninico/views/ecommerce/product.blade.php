@@ -288,6 +288,18 @@
                                 >
                                     {{ __('Description') }}
                                 </button>
+                                <button
+                                    class="nav-links"
+                                    id="sizechart-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#sizechart"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="sizechart"
+                                    aria-selected="true"
+                                >
+                                    {{ __('Sizechart') }}
+                                </button>
                             </li>
                             @if (EcommerceHelper::isProductSpecificationEnabled() && $product->specificationAttributes->where('pivot.hidden', false)->isNotEmpty())
                                 <li
